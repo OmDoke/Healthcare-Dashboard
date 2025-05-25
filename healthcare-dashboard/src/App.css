@@ -1,0 +1,76 @@
+/* Global Reset & Base Styles */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7fafd;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: #e3f2fd; /* light blue */
+}
+
+/* Dashboard Layout */
+.dashboard-layout {
+  background-color: #ffffff; /* white for main dashboard background */
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Sidebar Styling */
+.sidebar-section {
+  width: 240px;
+  background: #e8f0fe; /* very light blue */
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  border-right: 1px solid #bbdefb; /* soft blue border */
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #f4f7fa; /* light gray-blue */
+  overflow-y: auto;
+}
+
+/* Wrapper: Anatomy and Calendar side-by-side */
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+/* Shared Card Box Style */
+.anatomy-wrapper,
+.calendar-box,
+.schedule-box {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  border: 1px solid #cfd8dc; /* light blue-gray border */
+}
+
+/* Anatomy Section Width */
+.anatomy-wrapper {
+  width: 40%;
+  background-color: #e3f2fd; /* light blue tint */
+}
+
+/* Calendar & Schedule Column */
+.calendar-wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #f1f8e9; /* light green tint */
+  border-radius: 1rem;
+  padding: 1rem;
+}

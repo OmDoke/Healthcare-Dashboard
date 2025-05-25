@@ -1,0 +1,89 @@
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #4f46e5, #3b82f6); /* Blue gradient */
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.logo span {
+  color: #a5f3fc; /* Accent color */
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  gap: 0.5rem;
+  transition: background 0.3s ease;
+}
+.search-bar:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 0.9rem;
+  width: 150px;
+  pointer-events: none;
+}
+
+/* Header Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Icons */
+.icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #fefefe;
+  transition: color 0.3s ease;
+}
+.icon:hover {
+  color: #a5f3fc;
+}
+
+/* Avatar */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #a5f3fc;
+}
+
+/* Add Button */
+.add-btn {
+  background-color: #a5f3fc;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add-btn:hover {
+  background-color: #67e8f9;
+}

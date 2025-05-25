@@ -1,0 +1,28 @@
+.days-container {
+  display: flex;
+  gap: 2rem;        /* space between day blocks */
+  flex-wrap: wrap;  /* wrap to next line if not enough space */
+  background-color: #fff8e1; /* very light yellow */
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.day-block {
+  flex: 1 1 250px;  /* grow, shrink, base width */
+  min-width: 250px; /* minimum width so they don’t get too narrow */
+  background: #fff3e0; /* light orange */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(255, 152, 0, 0.2);
+  border: 1px solid #ffcc80; /* orange border */
+}
+
+/* Optional: Make the schedule cards inside day block flex vertically or however you like */
+.schedule-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #ffe0b2; /* pale orange */
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
